@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg,#313F4A 0%  , #392D39 100%);
+    
+}
+main {
+    max-width: 1100px;
+    height: 610px;
+    background-color: #121318;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+.navbar-container {
+    width: 400px;
+    height: 610px;
+    background-color: #15151D;
+    border-radius: 20px;
+}
