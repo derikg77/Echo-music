@@ -131,6 +131,10 @@ main {
     flex: 1;
     cursor: pointer;
 }
+.nav-playlist :hover {
+    transition: .5s all;
+    color: #108CE4
+}
 .nav-playlist i {
     display: flex;
     align-items: center;
