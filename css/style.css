@@ -8,8 +8,12 @@ body {
     background: linear-gradient(180deg,#313F4A 0%  , #392D39 100%);
     
 }
+ img {
+    max-width: 100%;
+}
 main {
-    max-width: 1100px;
+    display:flex ;
+    max-width: 1200px;
     height: 650px;
     background-color: #121318;
     border-radius: 20px;
@@ -33,25 +37,34 @@ main {
     align-items: flex-start;
     flex: 1;
     color: #DAE5EB;
-    /* position: relative; */
+    position: relative;
+    opacity: 90%
+    
+   
    
     
     
 }
-/* .navbar-title h2::before {
+.navbar-title h2::before {
     position: absolute;
     content: '';
     width: 20px;
     height: 20px;
     background-color: #108CE4;
     border-radius: 50%; 
-} */
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    
+}
+
 .nav-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #86878B;
     gap: 20px;
+    cursor: pointer;
     
 }
 .nav-header span {
@@ -63,6 +76,10 @@ main {
     gap: 15px;
     font-size: 18px;
 }
+.nav-header :hover {
+    transition: .5s all;
+    color: #108CE4
+}
 .nav-icon {
     display: flex;
     justify-content: center;
@@ -70,7 +87,13 @@ main {
     gap: 20px;
     color: #86878B;
     flex: 1;
+    cursor: pointer;
 }
+.nav-icon :hover {
+    transition: .5s all;
+    color: #108CE4
+}
+
 .nav-icon i {
     display: flex;
     align-items: center;
@@ -98,18 +121,58 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .nav-playlist {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
     color: #86878B;
     flex: 1;
+    cursor: pointer;
 }
 .nav-playlist i {
     display: flex;
     align-items: center;
     gap: 15px;
     font-size: 18px;
+    margin-top: 10px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin: 18px;
+   
+ 
+}
+.input-search {
+    position: relative;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    max-width: 400px;
+    height: 25px;
+   
+}
+.input-search input {
+    
+    width: 290px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #1B1B25;
+    color: #DAE5EB;
+    text-align: left;
+    padding-left: 40px;
+    border: none;
+    outline: none;
+    
+}
+.input-search i {
+    color: #2F3035;
+    font-size: 18px;
+    margin: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    
 }
