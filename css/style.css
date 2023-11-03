@@ -4,12 +4,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
+   
     min-height: 100vh;
     background: linear-gradient(180deg,#313F4A 0%  , #392D39 100%);
+    
     
 }
  img {
     max-width: 100%;
+    height: auto;
+    border-radius: 7px;
 }
 main {
     display:flex ;
@@ -142,24 +146,14 @@ main {
     font-size: 18px;
     margin-top: 10px;
 }
-header {
-    display: flex;
-    justify-content: center;
-    margin: 18px;
-   
- 
-}
 .input-search {
     position: relative;
-    display: flex;
-    align-items: center ;
-    justify-content: center;
     max-width: 400px;
     height: 25px;
+   padding: 20px 0;
    
 }
 .input-search input {
-    
     width: 290px;
     height: 32px;
     border-radius: 10px;
@@ -179,4 +173,37 @@ header {
     left: 0;
     right: 0;
     
+}
+.recently-plays {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 18px;
+}
+.recently-container {
+    display: flex;
+    flex: 1;
+}
+.recently-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    color: #DAE5EB ;
+}
+.recently-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+.recently-item h3 {
+    font-size: 16px;
+    color: #DAE5EB ;
+}
+.recently-item span {
+    color: #86878B;
 }
